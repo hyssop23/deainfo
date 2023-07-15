@@ -10,8 +10,7 @@ def encode(string_to_encode, frequency=250, v_min = 0, v_max= 15, max_time=10, p
     str_len = len(string_to_encode)
     num_packages = str_len*package_size
     encoded_array = np.zeros(num_packages)
-    print("Length of string: ", str_len)
-    print("encoded array length: ", len(encoded_array))
+    
     #for each character check its dictionary value of voltage tuple and unpack it into the encoded array
     for i in range(str_len):
         voltage_tuple = utility.character_to_voltage(string_to_encode[i])

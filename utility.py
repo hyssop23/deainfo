@@ -44,3 +44,12 @@ def character_to_voltage(character):
         voltage2 = color_voltage_dict[colorpair_split[1]]
         return (voltage1, voltage2)
     
+def voltage_to_character(voltage_tuple):
+    if not voltage_tuple[0] in color_voltage_dict.values() or not voltage_tuple[1] in color_voltage_dict.values():
+        return None
+    else:
+        color1 = [key for key, value in color_voltage_dict.items() if value == voltage_tuple[0]][0]
+        color2 = [key for key, value in color_voltage_dict.items() if value == voltage_tuple[1]][0]
+        colorpair = color1 + '-' + color2
+        return colorpair_character_dict[colorpair]
+    
