@@ -10,9 +10,16 @@ if not READ_FILE:
 else:
     string_to_encode = open("input.txt", "r").read()
 
+#convert full string to lower case first
+string_to_encode = string_to_encode.lower()
+
 encoded_string_array = encoder.encode(string_to_encode)
 print("Original string: ", string_to_encode)
 print("Encoded string: ", encoded_string_array)
+
+#export voltage to csv file
+encoder.export_voltage(encoded_string_array)
+print("Exported voltage to output.csv")
 
 decoded_string = decoder.decode(encoded_string_array)
 print("Decoded string: ", decoded_string)

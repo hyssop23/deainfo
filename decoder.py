@@ -4,6 +4,8 @@ import utility
 #the decode will take a set of voltages in numpy array and return string
 #it has additional parameters such as frequency of transmission, voltage range (HIGH, LOW), max time of transmission
 #default rate is 250Hz, default voltage range is 0-15V, default max time is 10 seconds, default package size is 2
+#def (.avi -> voltage pairings)
+
 def decode(encoded_array, frequency=250, v_min = 0, v_max= 15, max_time=10, package_size=2):
     #check length of encoded array and compute length of string
     #each package will represent 1 character

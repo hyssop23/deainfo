@@ -15,7 +15,7 @@ colorpair_character_dict = {'red-red':'a', 'red-orange':'b', 'red-yellow':'c', '
                             'teal-red':'2', 'teal-orange':'3', 'teal-yellow':'4', 'teal-green':'5', 
                             'teal-teal':'6', 'teal-blue':'7', 'teal-violet':'8', 'blue-red':'9', 
                             'blue-orange':' ', 'blue-yellow':'.', 'blue-green':',', 'blue-teal':'?', 
-                            'blue-blue':'!', 'blue-violet':'@', 'violet-red':'#', 'violet-orange':'$',
+                            'blue-blue':'!', 'blue-violet':'@', 'violet-red':'-', 'violet-orange':'’',
                             'violet-yellow':'%', 'violet-green':'^', 'violet-teal':'&', 'violet-blue':'(',
                             'violet-violet':')'}
 
@@ -29,7 +29,7 @@ character_colorpair_dict = {'a':'red-red', 'b':'red-orange', 'c':'red-yellow', '
                             '2':'teal-red', '3':'teal-orange', '4':'teal-yellow', '5':'teal-green',
                             '6':'teal-teal', '7':'teal-blue', '8':'teal-violet', '9':'blue-red',
                             ' ':'blue-orange', '.':'blue-yellow', ',':'blue-green', '?':'blue-teal',
-                            '!':'blue-blue', '@':'blue-violet', '#':'violet-red', '$':'violet-orange',
+                            '!':'blue-blue', '@':'blue-violet', '-':'violet-red', '’':'violet-orange',
                             '%':'violet-yellow', '^':'violet-green', '&':'violet-teal', '(':'violet-blue',
                             ')':'violet-violet'}
 
